@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Property Finder - Property Details</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+   
+  </style>
+</head>
+<body>
+
+<!-- navigation -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Property Finder</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="search.html">Search</a></li>
+		   	    <li><a href="results.html">Property</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container text-center">    
+
+  <div class="row">
+  
+<!-- 8 x 4 -->
+  <br><div class="row top-buffer">
+
+    <div class="col-xs-8">
+	
+     <div class="product">
+
+  <div class="product--body">
+  <div class="product--image">
+    <div class="icon-images">
+      <img src="img/property-2-1.jpg"/>
+      <img src="img/property-2-2.jpg"/>
+      <img src="img/property-2-3.jpg"/>
+    </div>
+    <img src="img/property-2-4.jpg" class="display-img">
+  </div>
+  
+  
+  <!-- product details -->
+  
+  
+  <div class="product--details">
+  
+ <div class="product-info">
+      <h2>3 Bedroom House for Sale in Musgrave</h2>
+	  
+	  	     <div class="property-pricing">
+                    <span>R900 000</span>
+                </div>
+				
+				      <ul class="sizing-list">
+				      <ul class="sizing-list">
+
+        <li class="size">
+		BEDROOMS: 3
+		</li>
+		
+        <li class="size">
+		BATHROOMS: 2 
+		</li>
+      </ul>
+	  
+	   <ul class="sizing-list">
+        <li class="size">
+		GARAGE: 2
+		</li>
+
+        <li class="size">
+		POOLS: 0
+		</li>
+      </ul>
+	  
+      <div class="desc">
+     Tucked away in a very quiet road this home has been beautifully maintained.
+	 Gleaming Oregon floors, tiling and some carpets. A formal and informal lounge
+	 and dining area with stunning entertainment flow. Your own sparkling pool plus
+	 a complete granny flat which produces a nice income. A guest suite in the garden
+	 could also produce income. Drive in access for plus or minus seven cars plus a double lock up garage.
+	 Excellent security don't delay phone for an appointment to view this gorgeous home.
+</div>
+	  
+    </div>
+
+  </div>
+  </div>
+</div>
+	  
+    </div>
+    
+	
+	<!-- contact form -->
+	
+    <div class="col-xs-4">
+      <div class="col-example">
+	  
+	<div class="contact-form">
+  <h2 class="contact-form-header">Enquire about this property</h2>
+		<form action="">
+
+<form action="/action_page.php">
+<input placeholder="First Name" type="text" name="first" required>
+<input placeholder="Last Name" type="text" name="last" required>
+<input placeholder="Email" type="text" name="email" required>
+<input placeholder="Message" type="text-area" name="message" required>
+<input class="btn-send" type="submit">
+</form>
+		</form>
+	</div>
+ 
+      </div>
+
+    </div>
+</div>
+
+</div>
+
+</div><br>
+
+<!-- footer -->
+
+<footer class="container-fluid text-center">
+  <p>Copyright 2018 | Property Finder | Developed by The Fire Tree Design Company</p>
+</footer>
+
+<script>
+// Change active class on product sizes.
+
+var sizes = jQuery(".product--size").find("span");
+sizes.click(function() {
+  sizes.removeClass("active");
+  $(this).addClass("active");
+});
+
+// Change image on thumbnail click.
+var thumbs = $(".icon-images").find("img");
+thumbs.click(function() {
+  var src = $(this).attr("src");
+  var dp = $(".display-img");
+  dp.attr("src", src);
+});
+</script>
+
+</body>
+</html>
